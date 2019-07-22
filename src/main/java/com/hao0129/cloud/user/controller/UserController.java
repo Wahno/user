@@ -20,7 +20,7 @@ public class UserController {
     public User findUserById(@PathVariable("id") String id){
         return userService.findUserById(id);
     }
-    @GetMapping("/name/{id}")
+    @GetMapping("/{id}/name")
     public String findUserNameById(@PathVariable("id") String id){
         return userService.findUserNameById(id);
     }
