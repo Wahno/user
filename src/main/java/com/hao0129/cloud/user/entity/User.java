@@ -1,5 +1,6 @@
 package com.hao0129.cloud.user.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -10,11 +11,17 @@ import java.io.Serializable;
 @Data
 public class User implements Serializable {
 
+    @JSONField(name = "ID")
     protected String id;          //用户ID
+    @JSONField(name = "NAME")
     protected String name;        //姓名
+    @JSONField(name = "SEX")
     protected String sex;         //性别
+    @JSONField(name = "PHONE")
     protected String phone;       //手机号
+    @JSONField(name = "QQ")
     protected String qq;          //qq号
+    @JSONField(name = "EMAIL")
     protected String email;       //邮箱
 
     public User(){

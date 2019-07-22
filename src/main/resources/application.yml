@@ -5,5 +5,15 @@ eureka:
 spring:
   application:
     name: eureka-user
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_user?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 8082
+
+logging:
+  level:
+    com.hao0129.cloud: trace
+
